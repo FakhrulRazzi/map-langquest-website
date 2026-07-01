@@ -146,39 +146,10 @@
     }
   }, { passive: false });
 
-  /* ---------- contact form ---------- */
-  var form = document.getElementById("contactForm");
-  var formCard = document.getElementById("formCard");
-  var formSuccess = document.getElementById("formSuccess");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var name = document.getElementById("cf-name");
-    var email = document.getElementById("cf-email");
-    var msg = document.getElementById("cf-msg");
-    var valid = true;
-
-    function setError(field, ok) {
-      var wrap = form.querySelector('[data-field="' + field + '"]');
-      wrap.classList.toggle("error", !ok);
-      if (!ok) valid = false;
-    }
-    setError("name", name.value.trim().length > 0);
-    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
-    setError("email", emailOk);
-    setError("message", msg.value.trim().length > 0);
-
-    if (!valid) return;
-
-    // FORM SUBMIT — replace this block with a real request, e.g.:
-    // fetch('https://formspree.io/f/yourFormId', { method: 'POST', body: new FormData(form) });
-    formCard.classList.add("submitted");
-    formSuccess.classList.add("show");
-  });
-
   /* ---------- back to top ---------- */
   var toTop = document.getElementById("toTop");
   window.addEventListener("scroll", function () {
-    toTop.classList.toggle("show", window.scrollY > 500);
+    toTop.classList.toggle("show", window.scrollY > 200);
   });
   toTop.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
