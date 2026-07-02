@@ -72,7 +72,7 @@
       "assets/screenshots/home.png",
       "assets/screenshots/admin.png"
     ] },
-    event: { label: "EVENT", images: [
+    event: { label: "EVENTS", images: [
       "assets/screenshots/event.png",
       "assets/screenshots/event-2.png",
       "assets/screenshots/attandance.png",
