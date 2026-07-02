@@ -148,7 +148,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .app-tab.active{background:var(--brand); color:#fff;}
 
 .app-phone{
-  width:min(270px,72vw); aspect-ratio:9/19.3;
+  width:min(300px,80vw); aspect-ratio:9/19.3;
   background:var(--ink); border-radius:28px; padding:9px;
   box-shadow:0 30px 60px -20px rgba(15,23,42,.5);
   position:relative;
