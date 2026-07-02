@@ -158,7 +158,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
   width:100%; height:100%; border-radius:20px; overflow:hidden; position:relative; background:var(--brand-dark);
 }
 
-.app-screen img{width:100%; height:100%; object-fit: cover; display:block;}
+.app-screen img{width:100%; height:100%; object-fit: contain; display:block;}
 
 .app-screen-scroll{
   display:flex; width:100%; height:100%; overflow-x:auto; scroll-snap-type:x mandatory;
